@@ -20,10 +20,13 @@ const About = () => {
           joy, innocence, and vibrant personalities of children. From giggles to
           curious stares, we freeze every magical moment with love and care.
         </p>
-        <img
+        <motion.img
           src="https://i.postimg.cc/N0WSg154/IMG-0526.jpg"
           alt=""
           className="main-image"
+          initial={{ y: -300, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 80, damping: 12 }}
         />
         <p>
           Our team of passionate photographers is trained to work with children
@@ -58,6 +61,7 @@ const About = () => {
           }}
           onTap={playSound}
         />
+        <p className="alert">Tap on the image to hear a cute sound! 🎶</p>
       </div>
     </section>
   );

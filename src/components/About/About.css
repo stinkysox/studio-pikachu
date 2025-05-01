@@ -10,6 +10,11 @@
   margin: 0 auto;
   color: #333;
 }
+
+.alert {
+  font-family: "Courier New", Courier, monospace;
+  color: tomato;
+}
 .main-image {
   width: 100%;
   border-radius: 10px;

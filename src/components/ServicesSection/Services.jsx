@@ -25,14 +25,14 @@ const Services = () => {
       title: "Maternity Photography",
       description:
         "Celebrate the journey of motherhood with intimate and glowing maternity photos.",
-      imageUrl: "https://i.postimg.cc/1twGQPZX/CMP00164.jpg",
+      imageUrl: "https://i.postimg.cc/3NsP3g6H/IMG-3038.jpg",
       alt: "Maternity",
     },
     {
       title: "Family Portraits",
       description:
         "Gather your loved ones for beautiful family portraits that will last a lifetime.",
-      imageUrl: "https://i.postimg.cc/bNJTBZvN/CMP00046.jpg",
+      imageUrl: "https://i.postimg.cc/SxSpRGRy/IMG-3049.jpg",
       alt: "Family Portraits",
     },
     {
