@@ -1,0 +1,66 @@
+.harsha-section {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.harsha-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222831;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #393e46;
+  margin-bottom: 5px;
+}
+
+.speciality {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+}
+
+.harsha-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background-color: #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-placeholder:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 768px) {
+  .harsha-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-placeholder {
+    width: 90%;
+    height: 350px;
+  }
+}

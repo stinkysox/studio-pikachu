@@ -1,0 +1,92 @@
+.services-container {
+  padding: 40px;
+  text-align: center;
+  background-color: #e1585b;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  height: 200px;
+  width: 100%;
+  background-color: #e1e1e1;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.service-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #f4d24d;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.contact-btn {
+  margin-top: 10px;
+  background-color: #f4d24d; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #f4d24d;
+}
+
+/* Media Query for screens with max-width of 468px */
+@media (max-width: 468px) {
+  .services-container {
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .services-list {
+    grid-template-columns: 1fr; /* Stack the services vertically on smaller screens */
+    gap: 15px;
+  }
+
+  .service-item {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .service-image {
+    height: 180px; /* Slightly reduce the image height */
+  }
+}

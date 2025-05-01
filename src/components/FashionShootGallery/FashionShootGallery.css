@@ -1,0 +1,88 @@
+.top-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #222831;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.first-carousel-container {
+  border-radius: 10px;
+  width: 80%; /* Control the width of the container */
+  max-width: 600px; /* Set a maximum width for better responsiveness */
+}
+
+.carousel-image {
+  width: 100%; /* Image will take the full width of the container */
+  height: 400px; /* Fixed height */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.top-para {
+  font-family: "Playfair Display", serif;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 26px;
+}
+
+.star {
+  color: yellow;
+  padding-top: 18px;
+}
+
+.heart {
+  color: red;
+}
+
+.fashion-title {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-family: "Monomakh", serif;
+  font-size: 1.6rem;
+}
+
+.instagram-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.instagram-button:hover {
+  transform: scale(1.1);
+}
+
+.instagram-button svg {
+  transition: transform 0.3s ease;
+}
+
+.instagram-button:hover svg {
+  transform: rotate(15deg);
+}
+
+/* For smaller devices with max-width of 468px */
+@media screen and (max-width: 468px) {
+  .top-carousel {
+    min-height: 30vh;
+  }
+
+  .first-carousel-container {
+    width: 100%; /* Adjust width on smaller screens */
+  }
+
+  .carousel-image {
+    height: 250px; /* Reduce height for smaller screens */
+  }
+}

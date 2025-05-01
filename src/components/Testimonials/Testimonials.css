@@ -1,0 +1,74 @@
+.testimonials {
+  padding: 4rem 2rem;
+  background-color: #222831;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.testimonials h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: whitesmoke;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  position: relative;
+  z-index: 1; /* Ensure it stays on top */
+  transition: transform 0.3s ease; /* Adding smooth transition */
+}
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.stars {
+  color: #f5a623;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  color: #444;
+  font-style: italic;
+}
+
+@media screen and (max-width: 468px) {
+  .testimonials h3 {
+    font-size: 1.2rem;
+  }
+
+  .testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    width: 90%; /* Or a fixed width like 300px */
+    max-width: 320px;
+  }
+}
